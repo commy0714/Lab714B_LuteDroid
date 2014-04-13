@@ -25,4 +25,4 @@
 ## 檔案傳輸
 
 ## 開發團隊
-   [!嶢海龍](https://github.com/a0tim/Lab714B_LuteDroid/Pictures/YaoHaiLong.png)
+   [!嶢海龍](./Pictures/YaoHaiLong.png)
