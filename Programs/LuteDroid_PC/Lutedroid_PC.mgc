@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="PhoneFrame.ImgPanel" x="952" y="472">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="PhoneFrame" x="881" y="96">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="ProjectTable"
+            endpointName="PT" kind="Simple"/>
+    </Class>
+    <Class name="ConnectFrame" x="645" y="555">
+        <AttributesDisplayFilter public-accepted="false"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="ProjectTable"
+            endpointName="PT" kind="Simple"/>
+        <Communication destinationClassName="PhoneFrame"/>
+    </Class>
+    <Class name="ProjectTable" x="302" y="504">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="MainFrame" endpointName="MF" kind="Simple"/>
+        <Association destinationClassName="ConnectFrame"
+            endpointName="CF" kind="Simple"/>
+        <Association destinationClassName="Connection" endpointName="C" kind="Simple"/>
+        <Association destinationClassName="PhoneFrame" endpointName="PF" kind="Simple"/>
+    </Class>
+    <Class name="Connection" x="201" y="195">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="ProjectTable"
+            endpointName="PT" kind="Simple"/>
+        <Communication destinationClassName="ConnectFrame"/>
+    </Class>
+    <Class name="Connection.catchStatus" x="398" y="226">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="MainFrame" x="569" y="71">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="ProjectTable"
+            endpointName="PT" kind="Simple"/>
+        <Communication destinationClassName="ConnectFrame"/>
+    </Class>
+</ClassDiagram>
