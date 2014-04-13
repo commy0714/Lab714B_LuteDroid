@@ -1,4 +1,4 @@
-# [LuteDroid](https://github.com/commy0714/Lab714B_LuteDroid)--[嶢海龍](https://fb.com/yaohailong)
+# [LuteDroid](https://github.com/commy0714/Lab714B_LuteDroid)--[嶢海龍&copy;](https://fb.com/yaohailong)
 
 ## 目錄
  - [系統介面](#系統介面)
